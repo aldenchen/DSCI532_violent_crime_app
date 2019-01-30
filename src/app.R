@@ -100,7 +100,7 @@ server <- function(input, output) {
   ucr_crime_df <- reactive({
     # Error message for empty input
     validate(
-      need(input$cities != "", "Please select at least one city")
+      need(input$cities != "", "Please select at least one city.")
     )
     # Data frame
     ucr_crime %>% 
